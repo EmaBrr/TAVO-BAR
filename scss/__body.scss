@@ -17,153 +17,166 @@ body {
   height: auto;
   background-color: $background-color;
   font-family: $mainfont;
-  // overflow: hidden;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80%;
-    max-width: 1200px;
-    padding: 30px 0px;
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1200px;
+  padding: 30px 0;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-    .left-section {
-      color: $secondary-text-color;
+  .left-section {
+    color: $secondary-text-color;
+    text-align: left;
+
+    .logo {
+      margin-bottom: 10px;
+      align-self: flex-start;
+      width: 170px;
+    }
+
+    .line {
       width: auto;
-      text-align: left;
+      height: 1px;
+      background-color: $secondary-text-color;
+      margin: 5px 0 15px;
+    }
 
-      .logo {
-        width: 170px;
-        margin-bottom: 10px;
-        align-self: flex-start;
-      }
+    .links {
+      a {
+        display: block;
+        text-decoration: none;
+        color: $secondary-text-color;
+        margin-bottom: 12px;
 
-      .line {
-        width: auto;
-        height: 1px;
-        background-color: $secondary-text-color;
-        margin: 5px 0 15px 0;
-      }
-
-      .links {
-        a {
-          display: block;
-          text-decoration: none;
+        &:hover {
           color: $secondary-text-color;
-          font-size: 1.2rem;
-          margin-bottom: 12px;
-
-          &:hover {
-            color: $secondary-text-color;
-          }
-
-          i {
-            font-size: 1.4rem;
-          }
-        }
-      }
-
-      .info {
-        p {
-          font-size: 0.9rem;
-          line-height: 20px;
-          letter-spacing: 1.2px;
-          color: $secondary-text-color;
-          padding-bottom: 10px;
         }
       }
     }
 
-    .rectangle-container {
+    .info {
+      p {
+        line-height: 20px;
+        letter-spacing: 1.2px;
+        color: $secondary-text-color;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .rectangle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .accent-rectangle {
+      background-color: $accent-color;
       width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
+      height: 140px;
+    }
+  }
+}
+
+@media (min-width: 974px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+
+    .left-section {
+      margin-right: 20px;
+
+      .logo {
+        width: 250px;
+      }
+    }
+
+    .rectangle-container {
+      justify-content: right;
+      margin-top: 0px;
 
       .accent-rectangle {
-        background-color: $accent-color;
-        width: 100%;
-        height: 140px;
+        height: 45vh;
+        max-width: 300px;
+        margin-left: 200px;
+        min-height: 250px;
       }
     }
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1301px) {
   .container {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-    width: 60%;
-    max-width: 1200px;
-    padding: 30px 0px;
+    width: 50%;
+  }
+}
 
-    .left-section {
-      width: 40%;
-      margin-right: 20px;
+p {
+  font-size: 1rem;
 
-      .logo {
-        width: 220px;
-        margin-bottom: 10px;
-        align-self: flex-start;
-      }
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
 
-      .line {
-        width: auto;
-        height: 1px;
-        background-color: $secondary-text-color;
-        margin: 5px 0 15px 0;
-      }
+  @media (min-width: 601px) and (max-width: 1000px) {
+    font-size: 1rem;
+  }
 
-      .links {
-        a {
-          display: block;
-          text-decoration: none;
-          color: $secondary-text-color;
-          font-size: 1.5rem;
-          margin-bottom: 12px;
+  @media (min-width: 1001px) and (max-width: 1400px) {
+    font-size: 1.1rem;
+  }
 
-          &:hover {
-            color: $secondary-text-color;
-          }
+  @media (min-width: 1401px) {
+    font-size: 1.2rem;
+  }
+}
 
-          i {
-            font-size: 1.6rem;
-          }
-        }
-      }
+a {
+  font-size: 1rem;
 
-      .info {
-        p {
-          font-size: 1.1rem;
-          line-height: 20px;
-          letter-spacing: 1.2px;
-          color: $secondary-text-color;
-          padding-bottom: 10px;
-        }
-      }
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: 601px) and (max-width: 1000px) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1001px) and (max-width: 1400px) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 1401px) {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  i {
+    @media (max-width: 600px) {
+      font-size: 1.3rem;
     }
 
-    .rectangle-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      // margin-top: 50px;
-      
+    @media (min-width: 601px) and (max-width: 1000px) {
+      font-size: 1.4rem;
+    }
 
-      .accent-rectangle {
-        background-color: $accent-color;
-        width: 100%;
-        height: 40vh;
-        max-width: 300px;
-        margin-left: 200px;
-      }
+    @media (min-width: 1001px) and (max-width: 1400px) {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: 1401px) {
+      font-size: 1.7rem;
     }
   }
 }
