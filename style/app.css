@@ -174,93 +174,151 @@ body {
   object-fit: cover;
 }
 .wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(1) {
-  width: 60px;
+  width: 20px;
   height: auto;
-  top: -20px;
-  left: 90px;
-  border: 3px solid #19432e;
+  top: 90px;
+  left: 110px;
   z-index: 1000;
 }
 .wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(2) {
-  width: 80px;
+  width: 40px;
   height: auto;
-  top: 40px;
-  left: 40px;
-  border: 2px solid #19432e;
+  top: 150px;
+  left: 90px;
   z-index: 900;
 }
 .wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(3) {
-  width: 70px;
+  width: 45px;
   height: auto;
-  top: 100px;
-  left: 100px;
+  top: 190px;
+  left: 115px;
   z-index: 800;
-  border: 2px solid #19432e;
 }
 .wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(4) {
-  width: 70px;
+  width: 45px;
   height: auto;
-  top: 160px;
-  left: 50px;
-  border: 3px solid #19432e;
+  top: 220px;
+  left: 90px;
+  z-index: 2;
+}
+.wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(5) {
+  width: 35px;
+  height: auto;
+  top: 240px;
+  left: 45px;
+  z-index: 1;
+}
+.wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(6) {
+  width: 25px;
+  height: auto;
+  top: 125px;
+  left: 135px;
+  z-index: 1;
+}
+.wrapper .wrapper-container .section-1 .section-container .right-side .collage-item:nth-child(7) {
+  width: 35px;
+  height: auto;
+  top: 270px;
+  left: 120px;
+  z-index: 1;
 }
 .wrapper .wrapper-container .section-2 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 95px;
+  position: relative;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .accent-rectangle {
   background-color: #19432e;
   width: 100%;
-  height: 140px;
-  position: relative;
+  height: 100%;
+  position: absolute;
+}
+.wrapper .wrapper-container .section-2 .rectangle-container .overlay-rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #19432e;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 8888;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   display: flex;
+  z-index: 2;
   flex-direction: column;
   align-items: center;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container .group-image {
   position: relative;
-  top: -60px;
+  top: -40px;
+  right: -90px;
   width: 60%;
   margin-bottom: 10px;
   z-index: 2;
-  width: 200px;
-  border: 2px solid #fef7ec;
+  width: 100px;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image {
   position: absolute;
   width: 200px;
+  top: -50px;
+  right: -60px;
+  z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-1 {
-  top: 200px;
-  left: 25%;
+  top: -20px;
+  left: 55%;
+  width: 40px;
   z-index: 1;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-2 {
-  top: 220px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  top: 30px;
+  left: 40%;
+  z-index: 0;
+  width: 60px;
 }
 .wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-3 {
-  top: 200px;
-  right: 25%;
+  top: 70px;
+  right: 20%;
   z-index: 1;
+  width: 60px;
+}
+.wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-4 {
+  top: 85px;
+  left: 25%;
+  z-index: 1;
+  width: 50px;
+}
+.wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-5 {
+  top: 40px;
+  right: 10%;
+  z-index: 1;
+  width: 50px;
+}
+.wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-6 {
+  top: 130px;
+  left: 50%;
+  z-index: 0;
+  width: 100px;
+}
+.wrapper .wrapper-container .section-2 .rectangle-container .image-container .drink-image-7 {
+  top: 120px;
+  left: 12%;
+  z-index: 2;
+  width: 50px;
 }
 
 .popup {
